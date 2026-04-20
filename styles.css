@@ -418,6 +418,7 @@ h1 {
 .gallery-viewport {
   overflow: hidden;
   border-radius: 18px;
+  touch-action: pan-y;
 }
 
 .photos-track {
@@ -425,6 +426,15 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
   min-height: 300px;
+}
+
+.photos-track.mobile-single {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+.photos-track.mobile-single .photo {
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 .gallery-nav {
@@ -667,29 +677,108 @@ body.modal-open .footer {
 
   .step {
     grid-template-columns: 1fr;
+    padding: 12px;
   }
 
   .top-actions {
     gap: 8px;
   }
 
+  .topbar {
+    padding: 10px 12px;
+  }
+
+  .brand {
+    font-size: 1.3rem;
+  }
+
   .music-toggle {
-    padding: 9px 12px;
-    font-size: 0.72rem;
+    padding: 8px 10px;
+    font-size: 0.7rem;
   }
 
   .gallery-slider {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
+    align-items: stretch;
+  }
+
+  .gallery-viewport {
+    grid-column: 1 / -1;
+    order: 1;
+  }
+
+  .gallery-nav.prev {
+    order: 2;
+  }
+
+  .gallery-nav.next {
+    order: 3;
   }
 
   .gallery-nav {
     min-width: 0;
     width: 100%;
+    padding: 12px 10px;
+    font-size: 0.98rem;
   }
 
   .photo {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.7);
+    min-height: 56vh;
+    margin: 0 auto;
+  }
+
+  .photo img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    max-height: 72vh;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: center center;
+    image-orientation: from-image;
+    margin: 0 auto;
+    display: block;
+    border-radius: 16px;
+  }
+
+  .gallery-dots {
+    margin-top: 10px;
+  }
+
+  .gallery-scrubber {
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .lang-toggle span {
+    padding: 6px 10px;
+  }
+
+  main {
+    width: 94vw;
+    gap: 18px;
+    padding: 22px 0 40px;
+  }
+
+  .hero {
+    padding: 30px 12px;
+    border-radius: 22px;
+  }
+
+  .invite-card,
+  .countdown,
+  .rsvp {
+    padding: 18px;
+  }
+
+  .timer div {
+    padding: 10px;
   }
 
 }

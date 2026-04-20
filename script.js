@@ -28,8 +28,7 @@ const texts = {
     program5: "Продолжение тоя",
     program6: "Завершение тоя",
     galleryTitle: "Фотографии молодых",
-    galleryNote:
-      "Здесь будут ваши лучшие кадры, включая красивые фото с предложения руки и сердца. Просто замените файлы в папке assets.",
+    galleryNote: "Наша история любви в самых теплых кадрах этого особенного дня.",
     galleryPrev: "Назад",
     galleryNext: "Далее",
     photoCaption1: "Ваше фото",
@@ -83,8 +82,7 @@ const texts = {
     program5: "Той жалғасады",
     program6: "Тойдың аяқталуы",
     galleryTitle: "Жас жұбайлардың фотосы",
-    galleryNote:
-      "Мұнда сіздердің ең әдемі фотоларыңыз болады, соның ішінде ұсыныс сәтіндегі кадрлар да. assets бумасындағы файлдарды ауыстырыңыз.",
+    galleryNote: "Махаббат хикаямыздың ең әсерлі, жүрекке жақын сәттері.",
     galleryPrev: "Алдыңғы",
     galleryNext: "Келесі",
     photoCaption1: "Сіздің фотоңыз",
@@ -326,6 +324,7 @@ function initGallery() {
 
   const update = () => {
     currentStart = Math.max(0, Math.min(currentStart, maxStart()));
+    track.classList.toggle("mobile-single", perView === 1);
     track.style.gridTemplateColumns = `repeat(${perView}, minmax(0, 1fr))`;
     items.forEach((item, i) => {
       const visible = i >= currentStart && i < currentStart + perView;
