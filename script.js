@@ -116,7 +116,7 @@ const config = {
 };
 
 let currentLang = "kz";
-let isMusicPlaying = false;
+let isMusicPlaying = true;
 
 function applyLanguage(lang) {
   currentLang = lang;
@@ -249,11 +249,23 @@ function initMusic() {
   const button = document.getElementById("musicToggle");
   if (!audio || !button) return;
 
+  audio.volume = 0.9;
+
   const syncButton = () => {
     button.classList.toggle("playing", isMusicPlaying);
     button.textContent = isMusicPlaying
       ? texts[currentLang].musicOn
       : texts[currentLang].musicOff;
+  };
+
+  const tryAutoplay = async () => {
+    try {
+      await audio.play();
+      isMusicPlaying = true;
+    } catch {
+      isMusicPlaying = false;
+    }
+    syncButton();
   };
 
   button.addEventListener("click", async () => {
@@ -271,7 +283,24 @@ function initMusic() {
     syncButton();
   });
 
-  syncButton();
+  tryAutoplay();
+
+  // Fallback for mobile browsers that block autoplay with sound
+  const unlockOnFirstGesture = async () => {
+    if (isMusicPlaying) return;
+    try {
+      await audio.play();
+      isMusicPlaying = true;
+      syncButton();
+    } catch {
+      // no-op
+    }
+    document.removeEventListener("pointerdown", unlockOnFirstGesture);
+    document.removeEventListener("keydown", unlockOnFirstGesture);
+  };
+
+  document.addEventListener("pointerdown", unlockOnFirstGesture, { once: true });
+  document.addEventListener("keydown", unlockOnFirstGesture, { once: true });
 }
 
 function initGallery() {
