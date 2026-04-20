@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 360" role="img" aria-label="Kazakh side ornament wave">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8f6428"/>
+      <stop offset="50%" stop-color="#e0ba76"/>
+      <stop offset="100%" stop-color="#9a6e2d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main flowing wave (close to provided reference style) -->
+  <path d="M18 0
+           C 58 0, 58 38, 96 38
+           C 58 38, 58 76, 18 76
+           C 58 76, 58 114, 96 114
+           C 58 114, 58 152, 18 152
+           C 58 152, 58 190, 96 190
+           C 58 190, 58 228, 18 228
+           C 58 228, 58 266, 96 266
+           C 58 266, 58 304, 18 304
+           C 58 304, 58 342, 96 342
+           C 58 342, 58 360, 18 360"
+        fill="none" stroke="url(#gold)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Internal curls -->
+  <path d="M26 18 C44 18, 44 32, 30 32 C20 32, 18 22, 26 18" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M88 56 C70 56, 70 70, 84 70 C94 70, 96 60, 88 56" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M26 94 C44 94, 44 108, 30 108 C20 108, 18 98, 26 94" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M88 132 C70 132, 70 146, 84 146 C94 146, 96 136, 88 132" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M26 170 C44 170, 44 184, 30 184 C20 184, 18 174, 26 170" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M88 208 C70 208, 70 222, 84 222 C94 222, 96 212, 88 208" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M26 246 C44 246, 44 260, 30 260 C20 260, 18 250, 26 246" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M88 284 C70 284, 70 298, 84 298 C94 298, 96 288, 88 284" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M26 322 C44 322, 44 336, 30 336 C20 336, 18 326, 26 322" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Алишер & Аяулым | Той</title>
+    <meta
+      name="description"
+      content="Приглашение на свадьбу Алишера и Аяулым. Той, где соберутся самые близкие."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="orbs" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <header class="topbar">
+      <div class="brand">A&A</div>
+      <div class="top-actions">
+        <button class="music-toggle" id="musicToggle" type="button">
+          Музыка: Выкл
+        </button>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">
+          <span data-lang="ru">RU</span>
+          <span data-lang="kz" class="active">KZ</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero reveal">
+        <p class="overline" data-i18n="saveDate">Сақтап қойыңыз / Сохраните дату</p>
+        <h1 data-i18n="names">Алишер & Аяулым</h1>
+        <p class="hero-sub" data-i18n="heroSubtitle">
+          Үйлену тойына / На свадебный той
+        </p>
+        <div class="hero-date" data-i18n="eventDate">DD.MM.YYYY</div>
+      </section>
+
+      <section class="invite-card reveal glass">
+        <h2 data-i18n="invitationTitle">Құрметті қонақтар! / Дорогие гости!</h2>
+        <p data-i18n="invitationBody">
+          Сіздерді Алишер мен Аяулымның үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы
+          болуға шақырамыз.
+        </p>
+        <p class="parents" data-i18n="parentsLine">
+          Нурлан и Гульнара.
+        </p>
+      </section>
+
+      <section class="details reveal">
+        <article class="detail-card glass">
+          <h3 data-i18n="whereTitle">Өтетін орны / Место</h3>
+          <p data-i18n="whereValue">Louvre Ball Room, г. Алматы, ул. Розыбакиева, 182а</p>
+          <a
+            href="https://2gis.kz/almaty/search/Louvre%20Ball%20Room%2C%20%D1%83%D0%BB.%20%D0%A0%D0%BE%D0%B7%D1%8B%D0%B1%D0%B0%D0%BA%D0%B8%D0%B5%D0%B2%D0%B0%2C%20182%D0%B0"
+            target="_blank"
+            rel="noopener"
+            data-i18n="mapLink"
+            >Картадан көру / Открыть карту</a
+          >
+        </article>
+        <article class="detail-card glass">
+          <h3 data-i18n="timeTitle">Уақыты / Время</h3>
+          <p data-i18n="timeValue">Қонақтарды қарсы алу: 16:00</p>
+        </article>
+        <article class="detail-card glass">
+          <h3 data-i18n="dressTitle">Дресс-код</h3>
+          <p data-i18n="dressValue">Мерекелік / Праздничный</p>
+        </article>
+      </section>
+
+      <section class="countdown reveal glass">
+        <h2 data-i18n="countdownTitle">Тойға дейін / До торжества</h2>
+        <div class="timer" id="timer">
+          <div><span id="days">00</span><small data-i18n="days">күн / дней</small></div>
+          <div><span id="hours">00</span><small data-i18n="hours">сағ / часов</small></div>
+          <div><span id="minutes">00</span><small data-i18n="minutes">мин / минут</small></div>
+          <div><span id="seconds">00</span><small data-i18n="seconds">сек / секунд</small></div>
+        </div>
+      </section>
+
+      <section class="timeline reveal">
+        <h2 data-i18n="programTitle">Той бағдарламасы / Программа</h2>
+        <div class="timeline-line">
+          <div class="step glass">
+            <strong>16:00</strong>
+            <p data-i18n="program1">Сбор и приветствие гостей, фуршет</p>
+          </div>
+          <div class="step glass">
+            <strong>17:00</strong>
+            <p data-i18n="program2">Приветствие и встреча сватов (кудалар)</p>
+          </div>
+          <div class="step glass">
+            <strong>17:30</strong>
+            <p data-i18n="program3">Беташар</p>
+          </div>
+          <div class="step glass">
+            <strong>18:00</strong>
+            <p data-i18n="program4">Торжественное начало тоя</p>
+          </div>
+          <div class="step glass">
+            <strong>19:00+</strong>
+            <p data-i18n="program5">Продолжение тоя</p>
+          </div>
+          <div class="step glass">
+            <strong>00:00</strong>
+            <p data-i18n="program6">Завершение тоя</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery reveal">
+        <h2 data-i18n="galleryTitle">Фотографии молодых</h2>
+        <p class="gallery-note" data-i18n="galleryNote">
+          Здесь будут ваши лучшие фото, включая красивые кадры с предложения руки и сердца.
+        </p>
+        <div class="gallery-slider" id="gallerySlider">
+          <button class="gallery-nav prev" id="galleryPrev" type="button" data-i18n="galleryPrev">
+            Алдыңғы
+          </button>
+          <div class="gallery-viewport">
+            <div class="photos-track" id="photosTrack">
+              <figure class="photo glass">
+                <img src="assets/photos/photo-01.jpeg" alt="Алишер и Аяулым - фото 1" loading="lazy" />
+              </figure>
+              <figure class="photo glass">
+                <img src="assets/photos/photo-02.jpeg" alt="Алишер и Аяулым - фото 2" loading="lazy" />
+              </figure>
+              <figure class="photo glass">
+                <img src="assets/photos/photo-03.jpeg" alt="Алишер и Аяулым - фото 3" loading="lazy" />
+              </figure>
+              <figure class="photo glass">
+                <img src="assets/photos/photo-04.jpeg" alt="Алишер и Аяулым - фото 4" loading="lazy" />
+              </figure>
+              <figure class="photo glass">
+                <img src="assets/photos/photo-05.jpeg" alt="Алишер и Аяулым - фото 5" loading="lazy" />
+              </figure>
+              <figure class="photo glass">
+                <img src="assets/photos/photo-06.jpeg" alt="Алишер и Аяулым - фото 6" loading="lazy" />
+              </figure>
+              <figure class="photo glass">
+                <img src="assets/photos/photo-07.jpeg" alt="Алишер и Аяулым - фото 7" loading="lazy" />
+              </figure>
+              <figure class="photo glass">
+                <img src="assets/photos/photo-08.jpeg" alt="Алишер и Аяулым - фото 8" loading="lazy" />
+              </figure>
+              <figure class="photo glass">
+                <img src="assets/photos/photo-09.jpeg" alt="Алишер и Аяулым - фото 9" loading="lazy" />
+              </figure>
+              <figure class="photo glass">
+                <img src="assets/photos/photo-10.jpeg" alt="Алишер и Аяулым - фото 10" loading="lazy" />
+              </figure>
+              <figure class="photo glass">
+                <img src="assets/photos/photo-11.jpeg" alt="Алишер и Аяулым - фото 11" loading="lazy" />
+              </figure>
+            </div>
+          </div>
+          <button class="gallery-nav next" id="galleryNext" type="button" data-i18n="galleryNext">
+            Келесі
+          </button>
+        </div>
+        <div class="gallery-dots" id="galleryDots" aria-label="Gallery pagination"></div>
+        <div class="gallery-scrubber">
+          <input id="galleryRange" type="range" min="0" max="0" value="0" step="1" />
+        </div>
+      </section>
+
+      <section class="rsvp reveal glass">
+        <h2 data-i18n="rsvpTitle">Қатысуыңызды растаңыз / Подтвердите участие</h2>
+        <p data-i18n="rsvpText">
+          Форманы толтырып, WhatsApp арқылы жіберіңіздер.
+        </p>
+        <form id="rsvpForm" class="rsvp-form">
+          <label for="guestName" data-i18n="fieldNameLabel">ФИО</label>
+          <input
+            id="guestName"
+            name="guestName"
+            type="text"
+            required
+            data-i18n-placeholder="fieldNamePlaceholder"
+            placeholder="Иванов Иван Иванович"
+          />
+
+          <label for="guestCount" data-i18n="fieldCountLabel">Сколько человек придет с вами</label>
+          <select id="guestCount" name="guestCount" required>
+            <option value="" disabled selected data-i18n="fieldCountPlaceholder">Выберите</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+          <label for="guestPhone" data-i18n="fieldPhoneLabel">Номер телефона</label>
+          <input
+            id="guestPhone"
+            name="guestPhone"
+            type="tel"
+            required
+            data-i18n-placeholder="fieldPhonePlaceholder"
+            placeholder="+7 777 000 00 00"
+          />
+
+          <button class="btn" type="submit" data-i18n="rsvpBtn">Отправить в WhatsApp</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p data-i18n="footerText">Сіздерді асыға күтеміз! / Будем рады видеть вас!</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">×</button>
+      <img id="lightboxImage" src="" alt="" />
+    </div>
+
+    <audio id="bgMusic" src="assets/toi-shashu.mp3" loop preload="none"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

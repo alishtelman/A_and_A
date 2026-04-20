@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="Ornament knot gold">
+  <defs>
+    <linearGradient id="goldKnot" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7d5623"/>
+      <stop offset="50%" stop-color="#d8b06d"/>
+      <stop offset="100%" stop-color="#8f652a"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#goldKnot)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 110 C52 80, 76 58, 106 58 C134 58, 160 80, 160 110 C160 140, 134 162, 106 162 C76 162, 52 140, 52 110 Z"/>
+    <path d="M106 34 L106 186"/>
+    <path d="M34 106 L186 106"/>
+    <path d="M72 72 C88 88, 88 124, 72 140"/>
+    <path d="M140 72 C124 88, 124 124, 140 140"/>
+  </g>
+</svg>

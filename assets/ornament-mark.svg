@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Kazakh ornament mark gold">
+  <defs>
+    <linearGradient id="goldMark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7f5824"/>
+      <stop offset="55%" stop-color="#d7ad68"/>
+      <stop offset="100%" stop-color="#8e6328"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#goldMark)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M120 34 C98 34, 86 48, 86 66 C86 84, 98 98, 120 98"/>
+    <path d="M120 34 C142 34, 154 48, 154 66 C154 84, 142 98, 120 98"/>
+    <path d="M120 206 C98 206, 86 192, 86 174 C86 156, 98 142, 120 142"/>
+    <path d="M120 206 C142 206, 154 192, 154 174 C154 156, 142 142, 120 142"/>
+    <path d="M34 120 C34 98, 48 86, 66 86 C84 86, 98 98, 98 120"/>
+    <path d="M34 120 C34 142, 48 154, 66 154 C84 154, 98 142, 98 120"/>
+    <path d="M206 120 C206 98, 192 86, 174 86 C156 86, 142 98, 142 120"/>
+    <path d="M206 120 C206 142, 192 154, 174 154 C156 154, 142 142, 142 120"/>
+    <path d="M98 120 L142 120"/>
+    <path d="M120 98 L120 142"/>
+  </g>
+</svg>

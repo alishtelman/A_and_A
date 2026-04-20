@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" role="img" aria-label="Kazakh ornament band gold">
+  <defs>
+    <linearGradient id="goldBand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8f6428"/>
+      <stop offset="45%" stop-color="#d9b16c"/>
+      <stop offset="55%" stop-color="#e7c684"/>
+      <stop offset="100%" stop-color="#8f6428"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="56" width="1200" height="8" fill="url(#goldBand)" opacity="0.95"/>
+  <g fill="none" stroke="url(#goldBand)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.98">
+    <path d="M40 60 C70 60, 70 30, 100 30 C130 30, 130 60, 160 60 C130 60, 130 90, 100 90 C70 90, 70 60, 40 60 Z"/>
+    <path d="M190 60 C220 60, 220 30, 250 30 C280 30, 280 60, 310 60 C280 60, 280 90, 250 90 C220 90, 220 60, 190 60 Z"/>
+    <path d="M340 60 C370 60, 370 30, 400 30 C430 30, 430 60, 460 60 C430 60, 430 90, 400 90 C370 90, 370 60, 340 60 Z"/>
+    <path d="M490 60 C520 60, 520 30, 550 30 C580 30, 580 60, 610 60 C580 60, 580 90, 550 90 C520 90, 520 60, 490 60 Z"/>
+    <path d="M640 60 C670 60, 670 30, 700 30 C730 30, 730 60, 760 60 C730 60, 730 90, 700 90 C670 90, 670 60, 640 60 Z"/>
+    <path d="M790 60 C820 60, 820 30, 850 30 C880 30, 880 60, 910 60 C880 60, 880 90, 850 90 C820 90, 820 60, 790 60 Z"/>
+    <path d="M940 60 C970 60, 970 30, 1000 30 C1030 30, 1030 60, 1060 60 C1030 60, 1030 90, 1000 90 C970 90, 970 60, 940 60 Z"/>
+    <path d="M1090 60 C1120 60, 1120 30, 1150 30 C1180 30, 1180 60, 1210 60"/>
+  </g>
+</svg>
